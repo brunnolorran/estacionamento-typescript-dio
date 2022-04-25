@@ -1,28 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estacionamento</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Estacionamento | DIO</title>
   </head>
   <body>
-    <input
-      type="text"
-      id="nome"
-      placeholder="Digite um nome do veículo: "
-      autocomplete="off"
-    />
-    <input
-      type="text"
-      id="placa"
-      placeholder="Digite um placa do veículo: "
-      autocomplete="off"
-    />
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">Estacionamento | DIO</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <form class="form-inline">
+            <div class="form-group m-3">
+              <label class="form-label mr-2">Nome do veículo: </label>
+              <input
+                type="text"
+                id="nome"
+                class="form-control"
+                placeholder="Ex: Golf"
+                autocomplete="off"
+              />
+            </div>
 
-    <button id="cadastrar">Cadastrar</button>
+            <div class="form-group m-3">
+              <label class="form-label mr-2">Placa do veículo: </label>
+              <input
+                type="text"
+                id="placa"
+                class="form-control"
+                placeholder="Ex: ecr456"
+                autocomplete="off"
+              />
+            </div>
+            <button id="cadastrar" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Nome</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="patio"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <table>
+    <!-- <table>
       <thead>
         <tr>
           <th>Nome</th>
@@ -32,8 +84,12 @@
         </tr>
       </thead>
       <tbody id="patio"></tbody>
-    </table>
+    </table> -->
 
-    <script src="./script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

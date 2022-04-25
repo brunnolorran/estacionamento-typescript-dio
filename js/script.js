@@ -15,13 +15,23 @@
         function adicionar(veiculo, salva) {
             var _a;
             const row = document.createElement("tr");
-            row.innerHTML = `
-      <td>${veiculo.nome}</td>
-      <td>${veiculo.placa}</td>
-      <td>${veiculo.entrada}</td>
-      <td>
-      <button class="delete" data-placa="${veiculo.placa}">X</button>
-      </td>
+            row.innerHTML = `      
+                    <td>${veiculo.nome}</td>
+                    <td>${veiculo.placa}</td>
+                    <td>${veiculo.entrada}</td>
+                    <td>
+                      <button
+                        href="#"
+                        class="close delete"
+                        data-placa="${veiculo.placa}"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true"
+                          ><i class="fa fa-close"></i
+                        ></span>
+                      </button>
+                    </td>
+                  </tr>
       `;
             (_a = row.querySelector(".delete")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
                 remover(this.dataset.placa);
