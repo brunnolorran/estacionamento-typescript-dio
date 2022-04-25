@@ -1,7 +1,7 @@
 # Fala aí, de boa? Aqui foi um desafio de typescript da Digital Innovation One 🙃
 
-Esse é o desafio de Typescript, na qual foi feito um mini crud simulando um estacionamento utilizando o Typescript!
-Adicionei uma eslização utilizando o bootstrap.
+- Foi feito um mini crud simulando um estacionamento utilizando o Typescript!
+- Adicionei uma eslização utilizando o bootstrap.
 
 ### Tela
 
